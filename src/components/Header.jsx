@@ -206,7 +206,7 @@ export const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/movies/popular"
+                  to="/movie/popular"
                   className={({ isActive }) =>
                     isActive ? activeClass : inActiveClass
                   }
@@ -216,7 +216,7 @@ export const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/movies/top"
+                  to="/movie/top"
                   className={({ isActive }) =>
                     isActive ? activeClass : inActiveClass
                   }
@@ -226,7 +226,7 @@ export const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/movies/upcoming"
+                  to="/movie/upcoming"
                   className={({ isActive }) =>
                     isActive ? activeClass : inActiveClass
                   }
