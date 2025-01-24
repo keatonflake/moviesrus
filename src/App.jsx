@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App dark:bg-slate-800 min-h-screen">
       <Header />
       <AllRoutes />
       <Footer />

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Backup from "../assets/images/backup.png";
+import { useTitle } from "../hooks/useTitle";
 
 export const MovieDetail = () => {
   const { id } = useParams();
@@ -22,9 +23,11 @@ export const MovieDetail = () => {
     fetchMovie();
   }, [id]);
 
+  const pageTitle = useTitle(`${data.title}`);
+
   return (
     <main>
-      <section className="flex justify-around flex-wrap py-5">
+      <section className="flex justify-around flex-wrap py-5 min-h-[95vh]">
         <div className="max-w-sm">
           <img className="rounded" src={image} alt={data.title} />
         </div>
