@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Backup from "../assets/images/backup.png";
+import { FavoriteButton } from "../components/FavoriteButton";
 import { useTitle } from "../hooks/useTitle";
 
 export const MovieDetail = () => {
@@ -50,6 +51,8 @@ export const MovieDetail = () => {
           ) : (
             ""
           )}
+
+          <FavoriteButton id={data.id} />
 
           <div className="flex items-center">
             <svg

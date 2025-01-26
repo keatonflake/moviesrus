@@ -1,5 +1,12 @@
+// src/components/AllRoutes.jsx
 import { Routes, Route } from "react-router-dom";
-import { MovieList, MovieDetail, Search, PageNotFound } from "../pages";
+import {
+  MovieList,
+  MovieDetail,
+  FavoriteList,
+  Search,
+  PageNotFound,
+} from "../pages";
 
 export const AllRoutes = () => {
   return (
@@ -22,6 +29,8 @@ export const AllRoutes = () => {
           path="/movie/upcoming"
           element={<MovieList apiPath="movie/upcoming" />}
         />
+        <Route path="/favorites" element={<FavoriteList />} />{" "}
+        {/* Add this route */}
         <Route path="search" element={<Search apiPath="search/movie" />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

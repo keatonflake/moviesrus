@@ -234,6 +234,16 @@ export const Header = () => {
                   Upcoming
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to="/favorites"
+                  className={({ isActive }) =>
+                    isActive ? activeClass : inActiveClass
+                  }
+                >
+                  Favorites
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Backup from "../assets/images/backup.png";
+import { FavoriteButton } from "../components/FavoriteButton";
 
 export const MovieCard = ({ movie }) => {
   const { id, original_title, poster_path } = movie;
@@ -12,12 +13,14 @@ export const MovieCard = ({ movie }) => {
       <Link to={`/movie/${id}`}>
         <img className="rounded-t-lg" src={image} alt="" />
       </Link>
+
       <div className="p-5">
         <Link to={`/movie/${id}`}>
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {original_title}
           </h5>
         </Link>
+        <FavoriteButton id={id} />
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {movie.overview}
         </p>
