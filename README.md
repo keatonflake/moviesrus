@@ -1,3 +1,9 @@
+# Live Movie Stats App
+
+## Link: [moviesrus.onrender.com/](https://moviesrus.onrender.com/)
+
+### Created with React, tailwind, & TMDB API
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
